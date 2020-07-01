@@ -1,0 +1,12 @@
+{
+  "greeting": "Hey there :wave: I'm DailyBot. I'm here to help you create and manage tasks in Slack.",
+  "start": "To start working with the application, run the `/<command_name> start` command. Your first *Daily* will begin immediately. I will be available only in the application chat.",
+  "daily": "A *Daily* is the process of updating the status of your tasks. It will take place on weekdays, depending on your time zone.",
+  "stages_title": "*Daily* consists of two stages:",
+  "stage_first": ":one: *Updating statuses of current tasks*. First, you will be shown your active tasks. For each you need to determine whether it is finished or you need to transfer it to the next day.",
+  "state_second": ":two: *Enter new tasks*. After you resolve all current tasks, you will receive a message about accepting new tasks. You can enter new tasks in separate messages or separate them with a hyphen in one.",
+  "commands_title": "List of available commands:",
+  "command_create": ":keycap_star: `/<command_name> create` Calling this command will open a modal window that prompts you to create a new task",
+  "command_list": ":keycap_star: `/<command_name> list` This command will display your last 10 tasks",
+  "view_tasks": ":eyes: View all tasks on the site {url}"
+}

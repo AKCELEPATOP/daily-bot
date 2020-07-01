@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    volumes:
+      - ./.devenv/nginx:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+
+  worker:
+    container_name: worker
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+      target: development
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/app/
+    ports:
+      - 8041:8041
+    depends_on:
+      - postgres
+      - nginx
+
+  postgres:
+    image: postgres:11.5-alpine
+    container_name: postrgres
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres-data:

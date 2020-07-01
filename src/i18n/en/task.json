@@ -1,0 +1,21 @@
+{
+  "actions": {
+    "complete": "Complete",
+    "postpone": "Postpone",
+    "cancel": "Cancel"
+  },
+  "handled": {
+    "statuses": {
+      "active": "reopened",
+      "completed": "completed",
+      "postponed": "postponed",
+      "canceled": "canceled"
+    },
+    "message": "*{title}* task {status}"
+  },
+  "list": {
+    "title": "Your last active tasks",
+    "footer": "You can see more tasks here"
+  },
+  "no_active_tasks": "You have no active tasks"
+}

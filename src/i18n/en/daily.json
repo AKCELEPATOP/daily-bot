@@ -1,0 +1,12 @@
+{
+  "request": {
+    "title": "Let's hold a daily!",
+    "start": "Start",
+    "postpone": "Postpone"
+  },
+  "status": {
+    "started": "Daily started",
+    "already_started": "Daily has already started",
+    "postponed": "Daily has been postponed"
+  }
+}
